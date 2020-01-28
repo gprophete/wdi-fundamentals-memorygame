@@ -37,15 +37,24 @@ function checkForMatch() {
 }
 
 
-function flipCard(cardID){
+function flipCard(){
 	console.log("User flipped" + cards[cardID].rank);
 	cardsInPlay.push(cards[cardId].rank);
 	console.log("User flipped" + cards[cardId].cardImage);
 	console.log("User flipped" + cards[cardId].suit);
 };
-flipCard();
-checkForMatch();
+//flipCard();
+//checkForMatch();
 
+function createBoard() {
+	for (let i = 0; i < cards.length; i++) {
+		someFunction(cards[i]);
+	}
+
+};
+let cardElement = document.createElement('img');
+document.getElement.setAttribute(cardImage, "images/back.png");
+document.getElementsById('game-board')[i].addEventListener('click', flipCard);
 
 
 
